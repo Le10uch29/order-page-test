@@ -1,0 +1,26 @@
+{
+  "name": "order-page-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:all": "start sass --watch src/scss/style.scss src/style/style.css && start sass --watch src/scss/media.scss src/style/media.css",
+    "start": "live-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le10uch29/order-page-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Le10uch29/order-page-test/issues"
+  },
+  "homepage": "https://github.com/Le10uch29/order-page-test#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.93.2"
+  }
+}

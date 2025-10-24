@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/media.css" />
+    <script defer src="/src/js/index.js"></script>
+    <title>LoremIpsum</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav nav" id="nav">
+                 <h2 class="nav__title">LoremIpsum.<span class="nav__title-accent">Net</span></h2>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Бизнес</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">О&nbsp;нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+                    <li class="nav__item"><a href="#PlaceAnOrder" class="nav__link">Оформить&nbsp;заказ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--Hero-->
+        <section class="hero" id="hero">
+            <div class="hero__container">
+                <h1 class="hero__title"><span class="hero__title-accent">lorem ipsum</span> dolor sit<br />amet
+                    consectetur <span class="hero__title-accent">adipiscing</span></h1>
+                <div class="hero__content">
+                    <h3 class="hero__title-mini">At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos
+                        ducimus!</h3>
+                    <p class="hero__descr"><span class="hero__descr-line"></span>Totam rem aperiam eaque ipsa</p>
+                    <p class="hero__descr"><span class="hero__descr-line"></span>Sit voluptatem accusantium doloremque
+                        laudantium</p>
+                    <p class="hero__descr"><span class="hero__descr-line"></span>Sed ut&nbsp;perspiciatis, unde omnis
+                        iste
+                        natus error</p>
+                    <div class="hero__actions">
+                        <button class="hero__btn">заказать</button>
+                        <a href="#" class="hero__link">подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Order-->
+        <section class="order" id="PlaceAnOrder">
+            <div class="order__container">
+                <div class="order__container-dop">
+                    <h2 class="order__title">Оформление<span class="order__title-accent"> Заказа</span></h2>
+                    <p class="order__descr">Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</p>
+                    <div class="order__instructions">
+                        <ul class="order__list">
+                            <li class="order__item">
+                                <div class="order__img-wrapper"><img src="./img/search.png" alt="" class="order__img">
+                                </div>
+                                <p class="order__img-descr">Lorem ipsum dolor
+                                    sit amet</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__img-wrapper"><img src="./img/percent.png" alt="" class="order__img">
+                                </div>
+                                <p class="order__img-descr">Сonsecteturadipiscing elitt</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__img-wrapper"><img src="./img/file.png" alt="" class="order__img">
+                                </div>
+                                <p class="order__img-descr">Sed do&nbsp;eiusmod tempor</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__img-wrapper"><img src="./img/message.png" alt="" class="order__img">
+                                </div>
+                                <p class="order__img-descr">Esse cillum dolore&nbsp;eu fugiat</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__img-wrapper"><img src="./img/money.png" alt="" class="order__img">
+                                </div>
+                                <p class="order__img-descr">Excepteur sint occaecat cupidatat non proident</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--form-->
+                    <form action="" class="order__form" id="orderForm">
+                        <div class="order__dropdown">
+                            <svg class="order__dropdown-img" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.4553 11.8571C14.4553 11.9286 14.4196 12.0089 14.366 12.0625L13.9196 12.5089C13.866 12.5625 13.7857 12.5982 13.7143 12.5982C13.6428 12.5982 13.5625 12.5625 13.5089 12.5089L9.99997 8.99999L6.49105 12.5089C6.43747 12.5625 6.35712 12.5982 6.28569 12.5982C6.20533 12.5982 6.1339 12.5625 6.08033 12.5089L5.6339 12.0625C5.58033 12.0089 5.54462 11.9286 5.54462 11.8571C5.54462 11.7857 5.58033 11.7053 5.6339 11.6518L9.79462 7.49106C9.84819 7.43749 9.92855 7.40178 9.99997 7.40178C10.0714 7.40178 10.1518 7.43749 10.2053 7.49106L14.366 11.6518C14.4196 11.7053 14.4553 11.7857 14.4553 11.8571Z"
+                                    fill="black" />
+                            </svg>
+
+                            <div class="order__dropdown-selected">Выберите тип системы</div>
+                            <ul class="order__dropdown-list">
+                                <li class="order__dropdown-item">Sed ut perspiciatis</li>
+                                <li class="order__dropdown-item">Nemo enim ipsam</li>
+                                <li class="order__dropdown-item">Et harum quidem</li>
+                                <li class="order__dropdown-item">Temporibus autem</li>
+                                <li class="order__dropdown-item">Itaque earum rerum</li>
+                                <li class="order__dropdown-item">Sed ut perspiciatis</li>
+                                <li class="order__dropdown-item">Nemo enim ipsam</li>
+                                <li class="order__dropdown-item">Et harum quidem</li>
+                                <li class="order__dropdown-item">Temporibus autem</li>
+                                <li class="order__dropdown-item">Itaque earum rerum</li>
+                            </ul>
+                        </div>
+
+                        <div class="order__input-control">
+                            <input type="text" name="email" placeholder="Ваш e-mail" class="order__input" required />
+                        </div>
+
+                        <div class="order__input-control">
+                            <input type="text" name="name" placeholder="Ваше имя" class="order__input" required />
+                        </div>
+
+                        <div class="order__input-range">
+                            <div class="order__range-wrapper">
+                                <label for="range">
+                                    Sed ut perspiciatis, unde omnis iste natus
+                                </label>
+                                <span class="order__range-value">0 %</span>
+                            </div>
+                            <input type="range" id="range" min="0" max="100" value="0" class="order__range" />
+                        </div>
+
+                        <div class="order__input-control file-group">
+                            <label for="file" class="order__file-label">📎 Прикрепить файл</label>
+                            <input type="file" name="file" id="file" class="order__file" required />
+                        </div>
+                    </form>
+                    <button type="submit" class="order__btn" form="orderForm">Отправить</button>
+            </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer__container">
+                <h2 class="footer__title">
+                    © 2018 «LoremIpsum.net» Все права защищены.</h2>
+                <ul class="footer__list">
+                    <li class="footer__list-block">
+                        <ul class="footer__sublist">
+                            <li class="footer__subitem"><img src="./img/qw.svg" alt="Qiwi wallet">Qiwi
+                                wallet</li>
+                            <li class="footer__subitem"><img src="./img/ym.svg" alt="Yandex Money">Yandex Money</li>
+                            <li class="footer__subitem"><img src="./img/wb.svg" alt="Web Money">Web Money</li>
+                        </ul>
+                    </li>
+                    <li class="footer__item"><a href="info@ipsum228.com" class="footer__item-link"><img src="./img/email.svg" alt="Yandex Money">info@ipsum228.com</a></li>
+                    <li class="footer__item"></li><a href="#" class="footer__item-link"><img src="./img/vk.svg" alt="Yandex Money">Мы вконтакте</a>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
