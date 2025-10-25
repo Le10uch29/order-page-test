@@ -1,45 +1,26 @@
 html {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: inherit;
     box-sizing: inherit;
-
 }
 
 body {
     background: #fff;
-    color: 000;
-    font-family: 'Raleway' 'Monaco' 'san-serif';
+    color: #000;
+    font-family: 'Raleway', 'Monaco', sans-serif;
     min-width: 320px;
     overflow-x: hidden;
     min-height: 100vh;
-    z-index: 1;
-    box-sizing: border-box;
-}
-
-img {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-button {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
 }
 
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgba(16, 16, 29, 0.9);
     position: fixed;
     top: 0;
@@ -50,14 +31,10 @@ button {
 
     &__container {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100px;
         width: 100%;
+        padding: 0 377px;
+        height: 100px;
         max-width: 1920px;
-        padding: 0 355px;
-        margin: 0 auto;
-
     }
 
     .nav {
@@ -70,7 +47,6 @@ button {
             font-size: 24px;
             font-weight: 700;
             margin-right: 20px;
-            vertical-align: middle;
             text-transform: uppercase;
 
             &-accent {
@@ -109,13 +85,14 @@ button {
 }
 
 .hero {
-    position: relative;
     display: flex;
     justify-content: center;
     height: 100%;
 
 
     &__container {
+        position: relative;
+        flex-direction: column;
         background-image: url("../img/hero.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -123,8 +100,7 @@ button {
         height: 100%;
         width: 100%;
         max-width: 1920px;
-        margin: 0 auto;
-        padding: 203px 355px;
+        padding: 203px 375px;
     }
 
     &__title {
@@ -140,8 +116,7 @@ button {
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
+        max-width: 780px;
         gap: 5px;
     }
 
@@ -170,7 +145,7 @@ button {
         }
     }
 
-    &__descr:nth-child(4) {
+    &__descr:nth-child(5) {
         margin-bottom: 80px;
     }
 
@@ -180,13 +155,14 @@ button {
     }
 
     &__btn {
+        width: 183px;
+        height: 43px;
         font-size: 13px;
         font-weight: 400;
         line-height: 100%;
         color: rgba(255, 255, 255, 1);
         text-transform: uppercase;
         background-color: rgba(62, 156, 220, 1);
-        padding: 15px 31.48px;
         vertical-align: middle;
         transition: all 0.3s ease-out;
 
@@ -207,6 +183,11 @@ button {
     }
 
     &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 183px;
+        height: 43px;
         font-size: 13px;
         font-weight: 400;
         line-height: 100%;
@@ -214,9 +195,7 @@ button {
         border: 1px solid rgba(111, 109, 123, 1);
         text-transform: uppercase;
         background-color: rgba(255, 255, 255, 1);
-        padding: 15px 31.48px;
         transition: all 0.3s ease-out;
-        vertical-align: middle;
 
         &:focus {
             background-color: #3E9CDC;
@@ -234,29 +213,29 @@ button {
 .order {
     position: relative;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     height: 100%;
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
         max-width: 1920px;
-        margin: 0 auto;
-        padding: 121px 350px 150px;
+        padding: 121px 150px;
         background-image: url("../img/orderBg.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
 
-        &-dop {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
 
+    }
+
+    &__container-dop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__title {
@@ -301,9 +280,9 @@ button {
     &__item {
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         width: 209px;
+        min-height: 164px;
         text-align: start;
     }
 
@@ -317,6 +296,7 @@ button {
         overflow: hidden;
         border: 5px solid #286690;
         background-color: #3E9CDC;
+        margin-bottom: 20px;
     }
 
     &__img {
@@ -330,12 +310,11 @@ button {
         text-align: center;
         font-size: 16px;
         font-weight: 400;
-        line-height: 100%;
     }
 
     &__form {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 30px;
@@ -539,6 +518,12 @@ button {
         text-transform: uppercase;
         transition: background 0.3s ease-in-out;
 
+                img {
+            width: 17.14px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
         &:hover {
             background: rgb(84, 131, 219);
         }
@@ -546,7 +531,6 @@ button {
 
     &__file {
         display: none;
-
 
         &-name {
             font-size: 15px;
@@ -580,18 +564,20 @@ button {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(61, 64, 80, 1);
-    position: relative;
     min-height: 80px;
+    width: 100%;
 
     &__container {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 40px;
-        width: 100%;
         max-width: 1920px;
-        padding: 30px 377px;
+        padding: 30px 150px;
 
     }
 
@@ -638,6 +624,20 @@ button {
         &-link {
             display: flex;
             align-items: center;
+            transition: all .3s ease-in-out;
+
+             &:focus {
+                color: #3E9CDC;
+                outline: none;
+            }
+
+            &:hover {
+                color: #3E9CDC;
+            }
+
+            &:active {
+                color: #3E9CDC;
+            }
 
             img {
                 font-size: 13px;

@@ -25,12 +25,6 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media (max-width: 1600px) {
-  .header__container, .hero__container, .order__container, .footer__container {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-}
 @media (max-width: 900px) {
   .burger {
     display: flex;
