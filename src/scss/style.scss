@@ -1,4 +1,16 @@
-html,
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+
+}
+
 body {
     background: #fff;
     color: 000;
@@ -8,6 +20,10 @@ body {
     min-height: 100vh;
     z-index: 1;
     box-sizing: border-box;
+}
+
+img {
+    width: 100%;
 }
 
 a {
@@ -23,7 +39,7 @@ button {
 
 .header {
     display: flex;
-     justify-content: center;
+    justify-content: center;
     background-color: rgba(16, 16, 29, 0.9);
     position: fixed;
     top: 0;
@@ -35,11 +51,11 @@ button {
     &__container {
         display: flex;
         align-items: center;
-            justify-content: space-between;
+        justify-content: space-between;
         height: 100px;
         width: 100%;
         max-width: 1920px;
-        padding: 0 375px;
+        padding: 0 355px;
         margin: 0 auto;
 
     }
@@ -108,7 +124,7 @@ button {
         width: 100%;
         max-width: 1920px;
         margin: 0 auto;
-        padding: 203px 375px;
+        padding: 203px 355px;
     }
 
     &__title {
@@ -223,12 +239,12 @@ button {
 
     &__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         max-width: 1920px;
         margin: 0 auto;
-        padding: 121px 374px 150px;
+        padding: 121px 350px 150px;
         background-image: url("../img/orderBg.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -292,20 +308,21 @@ button {
     }
 
     &__img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100px;
         height: 100px;
         border-radius: 50%;
         overflow: hidden;
         border: 5px solid #286690;
         background-color: #3E9CDC;
-        margin-bottom: 20px;
     }
 
     &__img {
         width: 55px;
         height: 55px;
         object-fit: contain;
-        padding: 22px;
     }
 
     &__img-descr {
@@ -318,11 +335,10 @@ button {
 
     &__form {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 30px;
-        padding: 0 10px;
 
     }
 
@@ -333,8 +349,8 @@ button {
     }
 
     &__input {
-        width: 358px;
-        height: 46px;
+        width: 100%;
+        height: 100%;
         padding: 0 0 0 10px;
         border: 1px solid #ccc;
         color: #272733;
@@ -348,9 +364,9 @@ button {
 
     &__dropdown {
         position: relative;
-        flex: 0 0 370px;
-        width: 370px;
-        height: 46px;
+        flex: 0 0 372px;
+        width: 100%;
+        height: 100%;
         background: #fff;
         border: 1px solid #ccc;
         border-radius: 3px;
@@ -446,7 +462,7 @@ button {
     &__input-range {
         display: flex;
         flex-direction: column;
-        width: 777px;
+        width: 772px;
         height: 48px;
     }
 
@@ -467,7 +483,8 @@ button {
     }
 
     &__range {
-        width: 777px;
+        margin: 0;
+        width: 100%;
         height: 6px;
         background: #FFFFFFB2;
         border-radius: 5px;

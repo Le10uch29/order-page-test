@@ -29,6 +29,17 @@
   }
 }
 
+@media (max-width: 1600px) {
+
+  .header, .hero, .order, .footer {
+    &__container {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+  }
+
+}
+
 @media (max-width: 900px) {
   .burger {
     display: flex;

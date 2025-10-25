@@ -1,4 +1,15 @@
-html,
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   background: #fff;
   color: 0;
@@ -8,6 +19,10 @@ body {
   min-height: 100vh;
   z-index: 1;
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -39,7 +54,7 @@ button {
   height: 100px;
   width: 100%;
   max-width: 1920px;
-  padding: 0 375px;
+  padding: 0 355px;
   margin: 0 auto;
 }
 .header .nav {
@@ -95,7 +110,7 @@ button {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 203px 375px;
+  padding: 203px 355px;
 }
 .hero__title {
   font-size: 48px;
@@ -193,12 +208,12 @@ button {
 }
 .order__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 121px 374px 150px;
+  padding: 121px 350px 150px;
   background-image: url("../img/orderBg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,19 +266,20 @@ button {
   text-align: start;
 }
 .order__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid #286690;
   background-color: #3E9CDC;
-  margin-bottom: 20px;
 }
 .order__img {
   width: 55px;
   height: 55px;
   object-fit: contain;
-  padding: 22px;
 }
 .order__img-descr {
   color: #fff;
@@ -274,11 +290,10 @@ button {
 }
 .order__form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
-  padding: 0 10px;
 }
 .order__input-control {
   width: 370px;
@@ -286,8 +301,8 @@ button {
   height: 48px;
 }
 .order__input {
-  width: 358px;
-  height: 46px;
+  width: 100%;
+  height: 100%;
   padding: 0 0 0 10px;
   border: 1px solid #ccc;
   color: #272733;
@@ -300,9 +315,9 @@ button {
 }
 .order__dropdown {
   position: relative;
-  flex: 0 0 370px;
-  width: 370px;
-  height: 46px;
+  flex: 0 0 372px;
+  width: 100%;
+  height: 100%;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -380,7 +395,7 @@ button {
 .order__input-range {
   display: flex;
   flex-direction: column;
-  width: 777px;
+  width: 772px;
   height: 48px;
 }
 .order__range-wrapper {
@@ -398,7 +413,8 @@ button {
   font-weight: 600;
 }
 .order__range {
-  width: 777px;
+  margin: 0;
+  width: 100%;
   height: 6px;
   background: rgba(255, 255, 255, 0.6980392157);
   border-radius: 5px;
