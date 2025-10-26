@@ -47,9 +47,11 @@ body {
   font-weight: 700;
   margin-right: 20px;
   text-transform: uppercase;
+  vertical-align: baseline;
 }
 .header .nav__title-accent {
   color: #3E9CDC;
+  vertical-align: baseline;
 }
 .header .nav__list {
   display: flex;
@@ -96,12 +98,14 @@ body {
   line-height: 100%;
   text-transform: uppercase;
   margin-bottom: 80px;
+  vertical-align: baseline;
 }
 .hero__title-accent {
   color: #3E9CDC;
+  vertical-align: baseline;
 }
 .hero__content {
-  max-width: 780px;
+  width: 100%;
   gap: 5px;
 }
 .hero__title-mini {
@@ -109,7 +113,6 @@ body {
   font-weight: 700;
   line-height: 100%;
   margin-bottom: 10px;
-  vertical-align: middle;
 }
 .hero__descr {
   font-size: 20px;
@@ -119,7 +122,6 @@ body {
   align-items: center;
   gap: 11px;
   padding-left: 11px;
-  vertical-align: middle;
 }
 .hero__descr-line {
   width: 4.94px;
@@ -212,12 +214,13 @@ body {
   line-height: 100%;
   text-align: center;
   margin-bottom: 30px;
+  vertical-align: baseline;
 }
 .order__title-accent {
   color: #3E9CDC;
+  vertical-align: baseline;
 }
 .order__descr {
-  vertical-align: middle;
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
@@ -234,8 +237,9 @@ body {
   justify-content: center;
   background-image: url(../img/points.png);
   background-repeat: no-repeat;
-  background-position: 170px 60px;
+  background-position: 165px 50px;
   gap: 30px;
+  width: 100%;
 }
 .order__item {
   display: flex;
@@ -385,6 +389,8 @@ body {
   gap: 12px;
   color: rgba(255, 255, 255, 0.6980392157);
   margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 400;
 }
 .order__range-wrapper-range-value {
   min-width: 40px;

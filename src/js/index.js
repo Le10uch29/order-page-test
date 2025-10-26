@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const navList = document.querySelector(".nav__list");
 
   const burger = document.createElement("button");
-  burger.id = "burger";
-  burger.classList.add("burger");
+  burger.id = "nav__burger";
+  burger.classList.add("nav__burger");
   burger.setAttribute("aria-label", "Open Menu");
 
   for (let i = 0; i < 3; i++) {
     const line = document.createElement("span");
-    line.classList.add("burger__line");
+    line.classList.add("nav__burger-line");
     burger.appendChild(line);
   }
 
