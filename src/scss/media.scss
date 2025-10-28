@@ -614,7 +614,10 @@
  }
 
  @media (max-width: 420px) {
-    
+
+    div {
+        padding: 0;
+    }
 
      .hero {
          &__title {
