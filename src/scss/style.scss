@@ -1,6 +1,8 @@
  html {
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
+       overflow-y: scroll; 
+  scroll-behavior: smooth;
  }
 
  *,
@@ -12,12 +14,11 @@
 
  body {
      background: #fff;
-     color: #000;
      font-family: 'Raleway', 'Lato', sans-serif;
      min-width: 320px;
-     overflow-x: hidden;
      min-height: 100vh;
  }
+
 
  @font-face {
      font-family: 'Lato';
@@ -105,7 +106,7 @@
          &__link {
              color: #fff;
              font-size: 13px;
-             line-height: normal;
+             line-height: 100%;
              font-weight: 600;
              -webkit-transition: all 0.3s ease-out;
              -o-transition: all 0.3s ease-out;
@@ -174,14 +175,14 @@
      &__title-mini {
          font-size: 20px;
          font-weight: 700;
-         line-height: normal;
+         line-height: 120%;
          margin-bottom: 10px;
      }
 
      &__descr {
          font-size: 20px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
          display: -webkit-box;
          display: -ms-flexbox;
          display: flex;
@@ -214,7 +215,7 @@
          height: 43px;
          font-size: 13px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
          color: rgba(255, 255, 255, 1);
          text-transform: uppercase;
          background-color: rgba(62, 156, 220, 1);
@@ -253,7 +254,7 @@
          height: 43px;
          font-size: 13px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
          color: rgba(42, 43, 48, 1);
          border: 1px solid rgba(111, 109, 123, 1);
          text-transform: uppercase;
@@ -324,13 +325,13 @@
          color: #fff;
          font-size: 36px;
          font-weight: 800;
-         line-height: normal;
+         line-height: 100%;
          text-align: center;
          margin-bottom: 30px;
          vertical-align: baseline;
 
          &-accent {
-            line-height: normal;
+            line-height: 100%;
              color: #3E9CDC;
              vertical-align: baseline;
          }
@@ -339,7 +340,7 @@
      &__descr {
          font-size: 18px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
          color: #BBBBBB;
          margin-bottom: 80px;
          text-align: center;
@@ -413,7 +414,7 @@
          text-align: center;
          font-size: 16px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
      }
 
      &__form {
@@ -448,7 +449,7 @@
          outline: none;
          font-size: 18px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
          -webkit-transition: 0.3s ease-in-out;
          -o-transition: 0.3s ease-in-out;
          transition: 0.3s ease-in-out;
@@ -686,7 +687,7 @@
          cursor: pointer;
          font-size: 15px;
          font-weight: 600;
-         line-height: normal;
+         line-height: 100%;
          text-transform: uppercase;
          -webkit-transition: background 0.3s ease-in-out;
          -o-transition: background 0.3s ease-in-out;
@@ -709,7 +710,7 @@
          &-name {
              font-size: 15px;
              font-weight: 600;
-             line-height: normal;
+             line-height: 100%;
              color: #272733;
          }
      }
@@ -724,7 +725,7 @@
          text-align: center;
          font-size: 15px;
          font-weight: 600;
-         line-height: normal;
+         line-height: 100%;
          -webkit-transition: 0.3s ease-in-out;
          -o-transition: 0.3s ease-in-out;
          transition: 0.3s ease-in-out;
@@ -768,7 +769,7 @@
      &__title {
          font-size: 13px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
          color: #fff;
      }
 
@@ -798,7 +799,7 @@
          align-items: center;
          font-size: 13px;
          font-weight: 400;
-         line-height: normal;
+         line-height: 100%;
          color: #C3C3C3;
 
          img {
@@ -842,7 +843,7 @@
              img {
                  font-size: 13px;
                  font-weight: 400;
-                 line-height: normal;
+                 line-height: 100%;
                  color: #fff;
                  padding-right: 10px;
              }
